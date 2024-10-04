@@ -7,12 +7,12 @@ ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy)
 
 password = os.getenv("SSH_PASSWORD")
 
-private_key_path = "./rancher.pem"
+private_key_path = "./private.pem"
 
 key = paramiko.RSAKey.from_private_key_file(private_key_path)
 
 hostname = "192.168.39.160"
-username = "rancher"
+username = "python-user"
 
 try:
 
