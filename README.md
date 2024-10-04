@@ -22,3 +22,6 @@ This Python script utilizes the Boto3 library to launch three Amazon EC2 instanc
 
 This Python script uses the Boto3 library to terminate Amazon EC2 instances whose IDs are listed in the `created_instances.txt` file. It reads the file, extracts the instance IDs, and stores them in a list. If the list of instance IDs is not empty, the script sends a termination request to AWS for those instances and prints a confirmation message along with the termination response. If no instance IDs are found in the file, it notifies the user accordingly.
 
+## [python-ssh-file-operations](./python-ssh-file-operation/)
+
+Python scripts uses **Paramiko** to establish SSH connections, transfer files via SFTP, and execute remote commands. It supports both single and multi-host operations: . SSH authentication is done via a private key and optional password, fetched securely from environment variables. Proper error handling and resource management ensure secure execution and cleanup of connections.
